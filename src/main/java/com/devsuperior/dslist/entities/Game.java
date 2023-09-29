@@ -24,7 +24,11 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
+	
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game() {		
@@ -38,8 +42,8 @@ public class Game {
 		this.genre = genre;
 		this.platforms = platforms;
 		this.score = score;
-		this.imgUrl = imgUrl;
-		this.shortDescription = shortDescription;
+		this.imgUrl = imgUrl;				
+		this.shortDescription = shortDescription;		
 		this.longDescription = longDescription;
 	}
 
